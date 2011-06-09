@@ -1,5 +1,5 @@
 //
-//  MaskExampleViewController.h
+//  MaskTypeViewController.h
 //  MaskExample
 //
 //  Created by Shakir Ali on 05/06/2011.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MaskExampleViewController : UIViewController {
+
+@interface MaskTypeViewController : UITableViewController {
     
 }
 
