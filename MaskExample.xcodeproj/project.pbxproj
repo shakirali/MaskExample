@@ -92,6 +92,10 @@
 		05738BD7139B94C800B1D2FD /* MaskExample */ = {
 			isa = PBXGroup;
 			children = (
+				05738C3E139C1AD400B1D2FD /* ReflectedImageViewController.h */,
+				05738C3F139C1AD500B1D2FD /* ReflectedImageViewController.m */,
+				0574EF8A139ED6AC0067E966 /* MaskWithImageViewController.h */,
+				0574EF8B139ED6AC0067E966 /* MaskWithImageViewController.m */,
 				05738C26139BC66800B1D2FD /* ColorMaskViewController.h */,
 				05738C27139BC66800B1D2FD /* ColorMaskViewController.m */,
 				05738C34139BEEDF00B1D2FD /* ImageMaskViewController.h */,
@@ -102,10 +106,6 @@
 				05738BE1139B94C900B1D2FD /* MaskExampleAppDelegate.m */,
 				05738BE3139B94C900B1D2FD /* MainWindow.xib */,
 				05738BD8139B94C800B1D2FD /* Supporting Files */,
-				05738C3E139C1AD400B1D2FD /* ReflectedImageViewController.h */,
-				05738C3F139C1AD500B1D2FD /* ReflectedImageViewController.m */,
-				0574EF8A139ED6AC0067E966 /* MaskWithImageViewController.h */,
-				0574EF8B139ED6AC0067E966 /* MaskWithImageViewController.m */,
 			);
 			path = MaskExample;
 			sourceTree = "<group>";
