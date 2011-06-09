@@ -14,8 +14,12 @@
 		05738BDF139B94C900B1D2FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738BDE139B94C900B1D2FD /* main.m */; };
 		05738BE2139B94C900B1D2FD /* MaskExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738BE1139B94C900B1D2FD /* MaskExampleAppDelegate.m */; };
 		05738BE5139B94C900B1D2FD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05738BE3139B94C900B1D2FD /* MainWindow.xib */; };
-		05738BE8139B94C900B1D2FD /* MaskExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738BE7139B94C900B1D2FD /* MaskExampleViewController.m */; };
-		05738BEB139B94C900B1D2FD /* MaskExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05738BE9139B94C900B1D2FD /* MaskExampleViewController.xib */; };
+		05738BF6139B996300B1D2FD /* MaskTypesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738BF5139B996300B1D2FD /* MaskTypesTableViewController.m */; };
+		05738C28139BC66900B1D2FD /* ColorMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738C27139BC66800B1D2FD /* ColorMaskViewController.m */; };
+		05738C2B139BC7EC00B1D2FD /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 05738C2A139BC7EC00B1D2FD /* bus.png */; };
+		05738C36139BEEE000B1D2FD /* ImageMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738C35139BEEE000B1D2FD /* ImageMaskViewController.m */; };
+		05738C40139C1AD800B1D2FD /* ReflectedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05738C3F139C1AD500B1D2FD /* ReflectedImageViewController.m */; };
+		0574EF8C139ED6AC0067E966 /* MaskWithImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574EF8B139ED6AC0067E966 /* MaskWithImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,24 @@
 		05738BD1139B94C800B1D2FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		05738BD3139B94C800B1D2FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05738BD5139B94C800B1D2FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		05738BD9139B94C800B1D2FD /* MaskExample-Info.plist */ = {isa = PBXFileReference; path = "MaskExample-Info.plist"; sourceTree = "<group>"; };
+		05738BD9139B94C800B1D2FD /* MaskExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaskExample-Info.plist"; sourceTree = "<group>"; };
 		05738BDB139B94C800B1D2FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		05738BDD139B94C800B1D2FD /* MaskExample-Prefix.pch */ = {isa = PBXFileReference; path = "MaskExample-Prefix.pch"; sourceTree = "<group>"; };
+		05738BDD139B94C800B1D2FD /* MaskExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaskExample-Prefix.pch"; sourceTree = "<group>"; };
 		05738BDE139B94C900B1D2FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05738BE0139B94C900B1D2FD /* MaskExampleAppDelegate.h */ = {isa = PBXFileReference; path = MaskExampleAppDelegate.h; sourceTree = "<group>"; };
+		05738BE0139B94C900B1D2FD /* MaskExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskExampleAppDelegate.h; sourceTree = "<group>"; };
 		05738BE1139B94C900B1D2FD /* MaskExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskExampleAppDelegate.m; sourceTree = "<group>"; };
 		05738BE4139B94C900B1D2FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		05738BE6139B94C900B1D2FD /* MaskExampleViewController.h */ = {isa = PBXFileReference; path = MaskExampleViewController.h; sourceTree = "<group>"; };
-		05738BE7139B94C900B1D2FD /* MaskExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskExampleViewController.m; sourceTree = "<group>"; };
-		05738BEA139B94C900B1D2FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaskExampleViewController.xib; sourceTree = "<group>"; };
+		05738BF4139B996300B1D2FD /* MaskTypesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskTypesTableViewController.h; sourceTree = "<group>"; };
+		05738BF5139B996300B1D2FD /* MaskTypesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskTypesTableViewController.m; sourceTree = "<group>"; };
+		05738C26139BC66800B1D2FD /* ColorMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMaskViewController.h; sourceTree = "<group>"; };
+		05738C27139BC66800B1D2FD /* ColorMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorMaskViewController.m; sourceTree = "<group>"; };
+		05738C2A139BC7EC00B1D2FD /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
+		05738C34139BEEDF00B1D2FD /* ImageMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageMaskViewController.h; path = ../ImageMaskViewController.h; sourceTree = "<group>"; };
+		05738C35139BEEE000B1D2FD /* ImageMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageMaskViewController.m; path = ../ImageMaskViewController.m; sourceTree = "<group>"; };
+		05738C3E139C1AD400B1D2FD /* ReflectedImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectedImageViewController.h; sourceTree = "<group>"; };
+		05738C3F139C1AD500B1D2FD /* ReflectedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectedImageViewController.m; sourceTree = "<group>"; };
+		0574EF8A139ED6AC0067E966 /* MaskWithImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskWithImageViewController.h; sourceTree = "<group>"; };
+		0574EF8B139ED6AC0067E966 /* MaskWithImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskWithImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 		05738BC2139B94C700B1D2FD = {
 			isa = PBXGroup;
 			children = (
+				05738C29139BC71B00B1D2FD /* Resources */,
 				05738BD7139B94C800B1D2FD /* MaskExample */,
 				05738BD0139B94C800B1D2FD /* Frameworks */,
 				05738BCE139B94C800B1D2FD /* Products */,
@@ -79,13 +92,20 @@
 		05738BD7139B94C800B1D2FD /* MaskExample */ = {
 			isa = PBXGroup;
 			children = (
+				05738C26139BC66800B1D2FD /* ColorMaskViewController.h */,
+				05738C27139BC66800B1D2FD /* ColorMaskViewController.m */,
+				05738C34139BEEDF00B1D2FD /* ImageMaskViewController.h */,
+				05738C35139BEEE000B1D2FD /* ImageMaskViewController.m */,
+				05738BF4139B996300B1D2FD /* MaskTypesTableViewController.h */,
+				05738BF5139B996300B1D2FD /* MaskTypesTableViewController.m */,
 				05738BE0139B94C900B1D2FD /* MaskExampleAppDelegate.h */,
 				05738BE1139B94C900B1D2FD /* MaskExampleAppDelegate.m */,
 				05738BE3139B94C900B1D2FD /* MainWindow.xib */,
-				05738BE6139B94C900B1D2FD /* MaskExampleViewController.h */,
-				05738BE7139B94C900B1D2FD /* MaskExampleViewController.m */,
-				05738BE9139B94C900B1D2FD /* MaskExampleViewController.xib */,
 				05738BD8139B94C800B1D2FD /* Supporting Files */,
+				05738C3E139C1AD400B1D2FD /* ReflectedImageViewController.h */,
+				05738C3F139C1AD500B1D2FD /* ReflectedImageViewController.m */,
+				0574EF8A139ED6AC0067E966 /* MaskWithImageViewController.h */,
+				0574EF8B139ED6AC0067E966 /* MaskWithImageViewController.m */,
 			);
 			path = MaskExample;
 			sourceTree = "<group>";
@@ -99,6 +119,15 @@
 				05738BDE139B94C900B1D2FD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05738C29139BC71B00B1D2FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05738C2A139BC7EC00B1D2FD /* bus.png */,
+			);
+			name = Resources;
+			path = MaskExample/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +182,7 @@
 			files = (
 				05738BDC139B94C800B1D2FD /* InfoPlist.strings in Resources */,
 				05738BE5139B94C900B1D2FD /* MainWindow.xib in Resources */,
-				05738BEB139B94C900B1D2FD /* MaskExampleViewController.xib in Resources */,
+				05738C2B139BC7EC00B1D2FD /* bus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +195,11 @@
 			files = (
 				05738BDF139B94C900B1D2FD /* main.m in Sources */,
 				05738BE2139B94C900B1D2FD /* MaskExampleAppDelegate.m in Sources */,
-				05738BE8139B94C900B1D2FD /* MaskExampleViewController.m in Sources */,
+				05738BF6139B996300B1D2FD /* MaskTypesTableViewController.m in Sources */,
+				05738C28139BC66900B1D2FD /* ColorMaskViewController.m in Sources */,
+				05738C36139BEEE000B1D2FD /* ImageMaskViewController.m in Sources */,
+				05738C40139C1AD800B1D2FD /* ReflectedImageViewController.m in Sources */,
+				0574EF8C139ED6AC0067E966 /* MaskWithImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +220,6 @@
 				05738BE4139B94C900B1D2FD /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		05738BE9139B94C900B1D2FD /* MaskExampleViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05738BEA139B94C900B1D2FD /* en */,
-			);
-			name = MaskExampleViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +304,7 @@
 				05738BF0139B94C900B1D2FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
