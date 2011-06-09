@@ -6,16 +6,27 @@
 //  Copyright 2011 University of Edinburgh. All rights reserved.
 //
 
-#import "MaskTypeViewController.h"
+#import "MaskTypesTableViewController.h"
+#import "ColorMaskViewController.h"
+#import "ImageMaskViewController.h"
+#import "ReflectedImageViewController.h"
+#import "MaskWithImageViewController.h"
 
+@interface MaskTypesTableViewController () 
+-(void)displayColorMaskViewController;
+-(void)displayImageMaskViewController;
+-(void)displayReflectedImageViewController;
+-(void)displayMaskWithImageViewController;
+@end
 
-@implementation MaskTypeViewController
+@implementation MaskTypesTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.title = NSLocalizedString(@"Examples",nil);
     }
     return self;
 }
@@ -83,16 +94,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,61 +114,75 @@
     }
     
     // Configure the cell...
-    
+    switch (indexPath.section) {
+        case 0:
+            cell.textLabel.text = NSLocalizedString(@"Image Masking",nil);
+            break;
+        case 1:
+            cell.textLabel.text = NSLocalizedString(@"Masking with image", nil);
+            break;
+        case 2:
+            cell.textLabel.text = NSLocalizedString(@"Color Masking",nil);
+            break;    
+        case 3:
+            cell.textLabel.text = NSLocalizedString(@"CGContextClipToMask", nil);
+        default:
+            break;
+    }
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    switch (indexPath.section) {
+        case 0:
+            [self displayImageMaskViewController];
+            break;
+        case 1:
+            [self displayMaskWithImageViewController];
+            break;
+        case 2:
+            [self displayColorMaskViewController];
+            break;
+        case 3:
+            [self displayReflectedImageViewController];
+            break;
+        default:
+            break;
+    }
+
 }
+
+-(void)displayColorMaskViewController{
+    ColorMaskViewController* colorMaskViewController;
+    colorMaskViewController = [[ColorMaskViewController alloc] init];
+    [self.navigationController pushViewController:colorMaskViewController animated:YES];
+    [colorMaskViewController release];
+}
+
+-(void)displayImageMaskViewController{
+    ImageMaskViewController* imageMaskViewController;
+    imageMaskViewController = [[ImageMaskViewController alloc] init];
+    [self.navigationController pushViewController:imageMaskViewController animated:YES];
+    [imageMaskViewController release];
+}
+
+-(void)displayReflectedImageViewController{
+    ReflectedImageViewController* reflectedImageViewController;
+    reflectedImageViewController = [[ReflectedImageViewController alloc] init];
+    [self.navigationController pushViewController:reflectedImageViewController animated:YES];
+    [reflectedImageViewController release];
+}
+
+-(void)displayMaskWithImageViewController{
+    MaskWithImageViewController* maskWithImageViewController;
+    maskWithImageViewController = [[MaskWithImageViewController alloc] init];
+    [self.navigationController pushViewController:maskWithImageViewController animated:YES];
+    [maskWithImageViewController release];
+}
+
 
 @end

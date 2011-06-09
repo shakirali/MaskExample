@@ -10,7 +10,8 @@
 
 
 @interface ReflectedImageViewController : UIViewController {
-    
+    UIImageView* imageView;
+    UIImageView* reflectedImageView;
 }
 
 @end

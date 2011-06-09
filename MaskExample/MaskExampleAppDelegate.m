@@ -7,21 +7,22 @@
 //
 
 #import "MaskExampleAppDelegate.h"
-
-#import "MaskExampleViewController.h"
+#import "MaskTypesTableViewController.h"
 
 @implementation MaskExampleAppDelegate
 
 
 @synthesize window=_window;
+@synthesize navController;
 
-@synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    MaskTypesTableViewController *viewController = [[MaskTypesTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+	navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+	[viewController release];
+	[self.window addSubview:navController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -68,7 +69,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [navController release];
     [super dealloc];
 }
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MaskTypeViewController : UITableViewController {
+@interface MaskTypesTableViewController : UITableViewController {
     
 }
 
